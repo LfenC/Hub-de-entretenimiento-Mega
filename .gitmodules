@@ -1,0 +1,3 @@
+[submodule "entertainment-hub"]
+	path = entertainment-hub
+	url = https://github.com/LfenC/entertainment-hub.git
