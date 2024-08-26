@@ -1,0 +1,24 @@
+services:
+  frontend:
+    build:
+      context: ./entertainment-hub
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"  # Mapea el puerto 80 del contenedor al puerto 80 del host
+    depends_on:
+      - backend
+    networks:
+      - backend-network
+
+  backend:
+    build:
+      context: ./mega_webAPI/mega_webAPI
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"  # Mapea el puerto 8080 del contenedor al puerto 5000 del host
+    networks:
+      - backend-network
+
+networks:
+  backend-network:
+    driver: bridge
