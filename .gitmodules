@@ -1,3 +1,6 @@
 [submodule "entertainment-hub"]
 	path = entertainment-hub
 	url = https://github.com/LfenC/entertainment-hub.git
+[submodule "mega_webAPI"]
+	path = mega_webAPI
+	url = https://github.com/LfenC/mega_webAPI
